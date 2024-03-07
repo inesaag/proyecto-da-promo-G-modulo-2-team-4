@@ -15,12 +15,12 @@ CREATE TABLE api(
 
 CREATE TABLE peliculas (
 	id_pelicula int NOT NULL,
-    puntuacion_imbd float, 
-    puntuacion_rt int,
+    puntuacion_imbd varchar (200), 
+    puntuacion_rt varchar (200),
     direccion varchar (100),
 	guionistas varchar (200),
 	argumento  text,
-	duracion_minutos int,
+	duracion_minutos varchar (200),
 	nombre_pelicula varchar (200),
 	codigo_imbd varchar (10),
     CONSTRAINT fkid_pelicula FOREIGN KEY (id_pelicula)
